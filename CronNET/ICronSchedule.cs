@@ -1,6 +1,6 @@
-using System;
+﻿using System;
 
-namespace CronNET.Interfaces
+namespace CronNET
 {
     public interface ICronSchedule
     {

@@ -1,13 +1,13 @@
-using System;
+﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace CronNET.Interfaces
+namespace CronNET
 {
     public interface ICronDaemon
     {
-        void Add(CronJob job);
-        void Remove(CronJob job);
+        void Add(ICronJob job);
+        void Remove(ICronJob job);
         void Remove(string name);
         void Clear();
         void Start(CancellationToken cancellationToken);
